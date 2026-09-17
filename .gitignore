@@ -1,0 +1,5 @@
+# Ignore all real parameter files to protect secrets and subscription IDs
+*.parameters*.json
+
+# Allow the example template to be committed
+!main.parameters.example.json

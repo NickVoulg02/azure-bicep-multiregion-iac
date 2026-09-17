@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appServicePlanSku": {
+      "value": {
+        "name": "B1",
+        "tier": "Basic"
+      }
+    },
+    "sqlDatabaseSku": {
+      "value": {
+        "name": "Standard",
+        "tier": "Standard"
+      }
+    },
+    "sqlServerAdministratorLogin": {
+      "value": "toyadmin"
+    },
+    "sqlServerAdministratorPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/<YOUR_SUBSCRIPTION_ID>/resourceGroups/<YOUR_RESOURCE_GROUP>/providers/Microsoft.KeyVault/vaults/<YOUR_KEY_VAULT_NAME>"
+        },
+        "secretName": "sqlAdminPassword"
+      }
+    }
+  }
+}
