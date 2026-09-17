@@ -95,7 +95,7 @@ az webapp deployment source config-zip \
 
 I deployed on an Azure Free Trial subscription and encountered `SubscriptionIsOverQuotaForSku` errors for `B1` or `F1` App Service plans. Microsoft strictly limits these compute instances globally on trial accounts. 
 <br>
-Stepping away and letting the backend rate limits and quota blocks cool off for a few days is how I handled the Azure Free Trial constraints.
+Stepping away and letting the backend rate limits and quota blocks cool off for a few days is how I handled these constraints.
 
 
 
